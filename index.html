@@ -3,11 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>f2-Contest-2</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
-    <script src="./contest-2.js"></script>
+    <form id="student-form">
+        <h2 id="form-heading">Student Management CRUD</h2>
+        <input type="hidden" id="edit-id">
+        <input id="name" type="text" placeholder="Name">
+        <input id="email" type="text" placeholder="Email">
+        <input id="GPA" type="text" placeholder="GPA">
+        <input id="age" type="text" placeholder="Age">
+        <input id="degree" type="text" placeholder="Degree">
+    </form>
+
+    <button id="add-edit-button">Add Student</button>
+
+    <div id="search-box">
+        <input type="text" id="search-input" placeholder="Search by name, email, or degree">
+    </div>
+
+    <table border="" class="student-list">
+        <tr>
+            <th>ID</th>
+            <th>Student Name</th>
+            <th>Email</th>
+            <th>GPA</th>
+            <th>Age</th>
+            <th>Degree</th>
+            <th>Action</th>
+        </tr>
+        
+    </table>
+
+    <script src="./script.js"></script>
 </body>
 </html>
